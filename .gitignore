@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Bases de datos 
+# *.db
+
+# Streamlit y entorno
+.streamlit/
+.vscode/
+.DS_Store
+
+# Chrome Driver
+chromedriver
