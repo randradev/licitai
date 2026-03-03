@@ -61,7 +61,7 @@ class LicitAIWeb:
             with st.sidebar.status("Ejecutando proceso...", expanded=True) as status:
                 try:
                     # Importación diferida para evitar dependencias circulares
-                    from main import ejecutar_pipeline
+                    from research.main import ejecutar_pipeline
                     ejecutar_pipeline()
                     status.update(label="Sincronización Exitosa", state="complete")
                     st.toast("Nuevas licitaciones cargadas.")
