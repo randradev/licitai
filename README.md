@@ -71,16 +71,3 @@ MP_TICKET=tu_ticket_api_mercado_público
 ## 👤 Autor
 randradev.
 Desarrollado con enfoque en **Ingeniería de Software y Automatización**.
-
-## 📊 Decisiones Técnicas
-
-### Extracción de Datos: Selenium vs. BeautifulSoup (BS4)
-
-Se evalúo un proceso de refactorización del módulo de scraping contemplando el uso de BeautifulSoup (BS4)
-con Request, para optimizar la velocidad y reducir el consumo de recursos en relación a la decisión
-original, Selenium WebDriver. No obstante, se optó por mantener la implementación en Selenium debido
-a las siguientes razones:
-
-1. **Renderizado dinámico:** Mercado Público utiliza tecnologías que cargan los datos de la ficha
-técnica después de que el HTML inicial ha sido enviado al navegador. BS4, como parser estático, solo
-captura el...
