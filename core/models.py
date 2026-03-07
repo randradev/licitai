@@ -50,6 +50,7 @@ class Keyword(models.Model):
     term = models.CharField(max_length=100)
     # Si es True, la keyword se usa para descartar licitaciones.
     is_negative = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         prefix = "[-]" if self.is_negative else "[+]"
