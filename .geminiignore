@@ -39,7 +39,7 @@ static/
 staticfiles/
 
 # --- Otros ---
-research/
+# research/
 
 # --- Gemini CLI Internal Files ---
 .gemini/                # Carpeta oculta que suele guardar índices o caché
